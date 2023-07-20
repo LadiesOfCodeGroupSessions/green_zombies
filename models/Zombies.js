@@ -1,7 +1,7 @@
 // zombies model
-const Zombies = {
-
-    getName() {
+class Zombies  {
+    //method
+     getName() {
         return 'Jim'
     }
 }
