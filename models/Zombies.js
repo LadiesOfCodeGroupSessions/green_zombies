@@ -1,8 +1,12 @@
 // zombies model
-const Zombies = {
-
-    getName() {
-        return 'Jim'
+class Zombies  {
+  
+    constructor (name) {
+        this.name = name;
+    }
+    //method
+     getName() {
+        return this.name;
     }
 }
 
