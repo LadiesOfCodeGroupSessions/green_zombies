@@ -2,13 +2,13 @@ const Zombies = require('../models/Zombies');
 jest.mock('../models/Zombies');
 
 test('test1', () => {
-   const zombi =  new Zombies();
+   const zombi =  new Zombies('Lili');
    const addSpy = jest.spyOn(zombi, 'getName');
    // configure the spy behaviour
-   addSpy.mockReturnValue('Jim');
+    addSpy.mockReturnValue('Lili');
    const name = zombi.getName();
    
-    expect(name).toBe('Jim');
+    expect(zombi.getName()).toBe('Lili');
 
     addSpy.mockRestore();
 
